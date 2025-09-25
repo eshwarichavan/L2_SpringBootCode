@@ -1,0 +1,57 @@
+- USE SPRINGBOOT INITIALIZER : to add dependencies
+- Create Folder & file strcuture
+- create entities add fields and mappings
+- add it to application properties
+- create service layer and add functionalites
+-
+
+
+------------------------------------------------------
+1. For Flight :
+- Add New Flights
+- Allow creation of flights with full metadata into entity
+- only admin can
+-
+
+
+2. For Passenger :
+
+3. For Gate :
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ //Mapping  :
+    //one flight can have many passengers
+//    @ManyToOne(mappedBy = "flight_id", cascade = CascadeType.ALL)
+//    private PassengerDetails passengerDetails;
+
+    //mappings now :
+//    @ManyToOne  //many orders can be made by one user
+//    @JoinColumn(name = "user_id")
+
+//    @OneToMany(mappedBy = "orders",cascade = CascadeType.ALL)
+//    //one order can have multiple order items
+
+
+//    @ManyToMany
+//    @JoinTable(
+//            name="user_conference",
+//            joinColumns = @JoinColumn(name="user_id"),
+//            inverseJoinColumns=@JoinColumn(name = "conference_id")
+//    )
+//    private Set<Conference> conferences = new HashSet<>();
